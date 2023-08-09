@@ -30,7 +30,7 @@ const items = [
   ]),
   getItem("Files", "9", <FileOutlined />),
 ];
-const DashboardLayout = () => {
+const DashboardLayout = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
@@ -81,7 +81,10 @@ const DashboardLayout = () => {
               background: colorBgContainer,
             }}
           >
-            Bill is a cat.
+            {
+              // eslint-disable-next-line react/prop-types
+              children
+            }
           </div>
         </Content>
         <Footer

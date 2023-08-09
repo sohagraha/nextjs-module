@@ -1,7 +1,7 @@
-import DashboardLayout from "../../../components/Layouts/DashboardLayout";
+import DashboardLayout from "@components/Layouts/DashboardLayout";
 
 const AdminDashboard = () => {
-  return <div></div>;
+  return <div>yahoo admin</div>;
 };
 
 export default AdminDashboard;
